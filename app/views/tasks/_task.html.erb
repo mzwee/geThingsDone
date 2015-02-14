@@ -4,7 +4,7 @@
       created <%= time_ago_in_words(task.created_at) %> ago
       <% end %>
     </div>
-    <div class="panel-body"><%= task.content %></div>
+    <div class="panel-body"><%= raw(task.content_html) %></div>
     <div class="panel-footer text-center">
       <% if task.state == "doing" %>
       <div class="btn-group btn-group-justified">
