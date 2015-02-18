@@ -1,14 +1,34 @@
 <div class="row">
-  <div class="col-md-4"><h1 class="text-center">To Do</h1>
-  <%= render @to_do %>
-  <%= link_to 'New Task', new_task_path, class: 'btn btn-sm btn-info btn-block' %>
+  <div class="col-md-4">
+    <h1 class="text-center">To Do</h1>
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <%= render @to_do %>
+      </div>
+      <div class="panel-footer">
+        <%= link_to 'New Task', new_task_path, class: 'btn btn-sm btn-primary btn-block' %>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4"><h1 class="text-center">Doing</h1>
-  <%= render @doing %>
+
+  <div class="col-md-4">
+    <h1 class="text-center">Doing</h1>
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <%= render @doing %>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4"><h1 class="text-center">Done</h1>
-  <%= render @done %>
+
+  <div class="col-md-4">
+    <h1 class="text-center">Done</h1>
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <%= render @done %>
+      </div>
+    </div>
   </div>
+
 </div>
 
 <br>
